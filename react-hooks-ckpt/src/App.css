@@ -2,13 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .prod-card {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -35,4 +30,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.prod-box {
+  justify-content: center;
+  overflow: scroll;
+}
+.prod-card {
+  margin: 1vw;
+  background-color: #63b4e0;
+  width: 25%;
+  height: 25vh;
+  border-radius: 10% 30%;
+  border-style: outset;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
